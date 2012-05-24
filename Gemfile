@@ -19,6 +19,14 @@ group :assets do
   # gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  
+  gem 'email_spec'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'nokogiri', '~> 1.5.2'
+
+
+
 end
 gem 'therubyracer'
 gem 'jquery-rails'
