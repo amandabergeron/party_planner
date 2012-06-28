@@ -1,4 +1,22 @@
 PartyPlanner::Application.routes.draw do
+  get "admin/index"
+
+  get "sessions/new"
+
+  get "sessions/create"
+
+  get "sessions/destroy"
+
+  resources :supplies
+
+  resources :parties
+
+  resources :messages do
+    collection do
+      get 'sent'
+    end 
+  end
+
   devise_for :users
 
   # The priority is based upon order of creation:
@@ -50,7 +68,7 @@ PartyPlanner::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

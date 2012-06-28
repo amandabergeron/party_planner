@@ -1,13 +1,150 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
-*/
+#container {
+
+    width: 760px;
+    border:solid;
+    border-color:#CCE23B;
+    margin: auto;
+
+}
+
+
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #DBFF8C;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+table.gridtable tr {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #DBFF8C;
+}
+
+
+#banner{  
+  background: #80BEDD;
+  padding: 10px;
+  border-style:solid;
+  border-width:5px;
+  border-color:black;
+  font: small-caps 20px/20px "Times New Roman", serif;
+  color: black;
+  text-align: center;
+
+}
+
+#column{
+  background: #EDF7FC;
+}
+    #main {
+     /* margin-left: 17em;*/
+      border-right:solid;
+      border-left:solid;      
+      border-bottom:solid;
+      border-color:black;
+      border-width:5px;
+      padding: 1em;
+      background: #EDF7FC;
+      color: black;
+
+       } 
+
+/*    #side {
+      float: left;
+      padding: 1em 2em;
+      width: 13px;
+      background: #444;
+      }*/
+  
+ 
+#nav {
+
+   padding:4px;
+   text-transform:uppercase;
+   border-right:solid;
+   border-left:solid;
+   border-position:absolute;
+   border-width:5px;
+   border-color:black;
+   background: #EDF7FC;
+   color: black;
+   text-align: center;
+   
+
+
+}
+
+a.button {
+    background: url(/assets/base3.jpg) no-repeat scroll top right;
+    border:solid;
+    width: 99px;
+    border-width:2px;
+    border-color:black;
+    color: black;
+    display: block;
+    float: left;
+    font: normal 18px arial, sans-serif;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 20px; /* sliding doors padding */
+    padding-left: 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button2 {
+
+-moz-box-shadow:inset 1px 1px 0px -22px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px -22px #ffffff;
+	box-shadow:inset 1px 1px 0px -22px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:19px;
+	-webkit-border-radius:19px;
+	border-radius:19px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#444;
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:1px 0px 0px #ffffff;
+}
+
+a.button2:active {
+
+position:relative;
+	top:1px;
+}
+
+}
+

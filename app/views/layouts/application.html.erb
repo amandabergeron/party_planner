@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PartyPlanner</title>
+  <title>Party Planner</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <div id= 'nav'> <%= link_to "Sign up", new_user_registration_path %> </div>
+
 
 </head>
 <body>
 
-<%= yield %>
+<div id = "container"> 
 
-</body>
+     <div id = "banner">
+         <h1><%= @page_title || "The Party Planner" %></h1>
+     </div>
+
+     <div id= 'nav'> 
+<a class="button" <%= link_to "Home", root_path %></a>
+<%- if current_user %>
+  <a class="button" <%= link_to "Sign out", destroy_user_session_path, :method => 'delete' %></a>
+<%- else %>
+  <a class="button" <%= link_to "Sign in", new_user_session_path %></a>
+<%- end %>
+
+<a class="button" <%= link_to "Parties", parties_path %></a>
+<a class="button" <%= link_to "Supplies", supplies_path %></a>
+<a class="button" <%= link_to "Messages", messages_path %></a>
+
+     </div> 
+
+         <div id = "main">
+            <%= yield %>
+
+         </div>
+         
+         <div id = "side">
+  
+         </div>
+  
+       <div id = "footer">
+
+       </div>
+
+</div>
+  </body>
 </html>

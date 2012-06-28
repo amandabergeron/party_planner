@@ -1,3 +1,5 @@
+
+
 # Commonly used email steps
 #
 # To add your own steps make a custom_email_steps.rb
@@ -205,6 +207,4 @@ Then /^save and open all raw emails$/ do
   EmailSpec::EmailViewer::save_and_open_all_raw_emails
 end
 
-require 'email_specs'
-require 'email_spec/cucumber'
 
