@@ -16,7 +16,7 @@
   <tr>
     <td><%= supply.name %></td>
     <td><%= supply.amount %></td>
-    <td><%= supply.party_id %></td>
+    <td><%= link_to supply.party.name, party_path(supply.party_id) %></td>
     <td><%= supply.user_id %></td>
     <td><%= link_to 'Show', supply %></td>
     <td><%= link_to 'Edit', edit_supply_path(supply) %></td>

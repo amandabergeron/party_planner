@@ -4,7 +4,7 @@ before_filter :authenticate_user!
   # GET /parties
   # GET /parties.json
   def index
-    @parties = Party.all
+    @parties = Party.find(:all, :order => 'name')
 
     respond_to do |format|
       format.html # index.html.erb
