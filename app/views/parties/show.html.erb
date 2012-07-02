@@ -1,0 +1,48 @@
+<center><p id="notice"><%= notice %></p>
+
+<table class="gridtable">
+<th colspan="2">
+<b><%= @party.name %> </b>
+</th>
+
+<tr>
+<td><b>User:</b></td>
+<td><%= @party.user_id %></td>
+</tr>
+
+<tr>
+<td><b>Location:</b></td>
+<td><%= @party.location %></td>
+</tr>
+
+<tr>
+<td><b>Start:</b></td>
+<td><%= @party.start %></td>
+</tr>
+
+<tr>
+<td><b>End:</b></td>
+<td> <%= @party.end %></td>
+</tr>
+
+<tr>
+<td><b>Discription:</b></td>
+<td><%= @party.description %></td>
+</tr>
+
+<tr>
+<td><b>Dress:</b></td>
+<td><%= @party.dress %></td>
+</tr>
+
+
+<tr>
+<td><b>Date:</b></td>
+<td>  <%= @party.date %></td>
+</tr>
+
+</table>
+
+
+<%= link_to 'Edit', edit_party_path(@party) %> |
+<%= link_to 'Back', parties_path %></center>

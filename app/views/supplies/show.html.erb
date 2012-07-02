@@ -1,0 +1,27 @@
+<center><p id="notice"><%= notice %></p>
+
+<table class="gridtable">
+<th colspan="2">
+<b><%= @supply.name %> </b>
+</th>
+
+<tr>
+<td><b>Amount:</b></td>
+<td><%= @supply.amount %></td>
+</tr>
+
+<tr>
+<td><b>Party:</b></td>
+<td><%= @supply.party_id %></td>
+</tr>
+
+<tr>
+<td><b>User:</b></td>
+<td><%= @supply.user_id  %></td>
+</tr>
+
+</table>
+
+
+<%= link_to 'Edit', edit_supply_path(@supply) %> |
+<%= link_to 'Back', supplies_path %></center>

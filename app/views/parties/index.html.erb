@@ -1,0 +1,38 @@
+<center><h1>Parties</h1></center>
+
+<center><table class="gridtable">
+
+  <tr>
+    <th>User</th>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Description</th>
+    <th>Dress</th>
+    <th>Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @parties.each do |party| %>
+  <tr>
+    <td><%= party.user_id %></td>
+    <td><%= party.name %></td>
+    <td><%= party.location %></td>
+    <td><%= party.start %></td>
+    <td><%= party.end %></td>
+    <td><%= party.description %></td>
+    <td><%= party.dress %></td>
+    <td><%= party.date %></td>
+    <td><%= link_to 'Show', party %></td>
+    <td><%= link_to 'Edit', edit_party_path(party) %></td>
+    <td><%= link_to 'Destroy', party, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table></center>
+
+<br />
+
+<center> <a class = "button2"<%= link_to 'New Party', new_party_path %></a></center>

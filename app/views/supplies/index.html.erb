@@ -1,0 +1,30 @@
+<center><h1>Supplies</h1></center>
+
+<center><table class="gridtable">
+
+  <tr>
+    <th>Name</th>
+    <th>Amount</th>
+    <th>Party</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @supplies.each do |supply| %>
+  <tr>
+    <td><%= supply.name %></td>
+    <td><%= supply.amount %></td>
+    <td><%= supply.party_id %></td>
+    <td><%= supply.user_id %></td>
+    <td><%= link_to 'Show', supply %></td>
+    <td><%= link_to 'Edit', edit_supply_path(supply) %></td>
+    <td><%= link_to 'Destroy', supply, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table></center>
+
+<br />
+
+<center> <a class = "button2"<%= link_to 'New Supply', new_supply_path %></a></center>
